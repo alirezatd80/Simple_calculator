@@ -1,5 +1,5 @@
 import pytest
-from operations import add , subtract , multiply ,divide , power
+from operations import add , subtract , multiply ,divide , power , modulus
 
 def test_add():
     assert add(1,3) == 4
