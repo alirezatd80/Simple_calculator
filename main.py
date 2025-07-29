@@ -1,4 +1,4 @@
-
+from operations import add ,subtract,multiply,divide,modulus,power
 def user_input(prompt):
     while True:
         try:
@@ -32,17 +32,20 @@ def main():
             num2 = user_input('enter number 2 : ')
             
             if choice == '1':
-                pass
+                print(f'result :{num1}+{num2} = {add(num1,num2)}')
             elif choice == '2' :
-                pass
+                print(f'result :{num1}-{num2} = {subtract(num1,num2)}')
             elif choice == '3' :
-                pass
+                print(f'result :{num1}*{num2} = {multiply(num1,num2)}')
+                
             elif choice =='4' :
-                pass
+                print(f'result :{num1}/{num2} = {divide(num1,num2)}')
+                
             elif choice == '5' :
-                pass
+                print(f'result :{num1}^{num2} = {power(num1,num2)}')
             elif choice == '6' : 
-                pass
+                print(f'result :{num1}%{num2} = {modulus(num1,num2)}')
+                
         except KeyboardInterrupt:
             print("\nOperation cancelled by user.")
             break
