@@ -1,5 +1,5 @@
 import pytest
-from operations import add , subtract , multiply ,divide , power , modulus
+from operations import add , subtract , multiply ,divide , power , modulus , root
 
 def test_add():
     assert add(1,3) == 4
@@ -42,5 +42,9 @@ def test_modulus():
 def test_modulus_byzero():
     with pytest.raises(ZeroDivisionError , match="cant divide by zero !!!"):
         modulus(10,0)
-    
+
+def test_root():
+    assert root(4) ==2
+    assert root(9) ==3
+    assert root(144) ==12
     

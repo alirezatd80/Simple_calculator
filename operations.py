@@ -20,3 +20,5 @@ def modulus(num1 :int , num2 :int):
     if num2 == 0:
         raise ZeroDivisionError('cant divide by zero !!!')
     return num1 %num2
+def root(num1 :int , num2=0.5):
+    return num1 ** num2
