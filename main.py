@@ -47,7 +47,7 @@ def main():
             elif choice == '6' : 
                 print(f'result :{num1}%{num2} = {modulus(num1,num2)}')
             elif choice == '7' :
-                print(f'result : sqr = {num1} = {root(num1)}')
+                print(f'result : sqr => {num1} = {root(num1)}')
                 
         except KeyboardInterrupt:
             print("\nOperation cancelled by user.")
