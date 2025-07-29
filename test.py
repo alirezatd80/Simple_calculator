@@ -1,5 +1,5 @@
 import pytest
-from operations import add
+from operations import add , subtract
 
 def test_add():
     assert add(1,3) == 4
