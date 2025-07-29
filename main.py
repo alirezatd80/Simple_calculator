@@ -1,4 +1,4 @@
-from operations import add ,subtract,multiply,divide,modulus,power
+from operations import add ,subtract,multiply,divide,modulus,power,root
 def user_input(prompt):
     while True:
         try:
@@ -15,16 +15,17 @@ def main():
     print("4. Divide (/)")
     print("5. Power (^)")
     print("6. Modulus (%)")
-    print("7. Exit")
+    print("7. root (^0.5)")
+    print("8. Exit")
     while True:
         try :
-            choice = input("Enter operation (1/2/3/4/5/6/7):")
+            choice = input("Enter operation (1/2/3/4/5/6/7/8):")
             
-            if choice == '7' :
+            if choice == '8' :
                 print('Goodbye')
                 break
             
-            if choice not in ('1','2','3','4','5','6','7'):
+            if choice not in ('1','2','3','4','5','6','7','8'):
                 print('Invalid choice. Please try again.')
                 continue
             
@@ -45,6 +46,8 @@ def main():
                 print(f'result :{num1}^{num2} = {power(num1,num2)}')
             elif choice == '6' : 
                 print(f'result :{num1}%{num2} = {modulus(num1,num2)}')
+            elif choice == '7' :
+                print(f'result : sqr = {num1} = {root(num1)}')
                 
         except KeyboardInterrupt:
             print("\nOperation cancelled by user.")
